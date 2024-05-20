@@ -1,0 +1,61 @@
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/images/hero-bg-light.webp" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up" class="">Bienvenido a <span>ChangeEasy</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100" class="">Conversión precisa, resultados rápidos<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <form (ngSubmit)="procesar()">
+                <div class="form-group d-flex">
+                  <input type="number" class="form-control flex-fill" 
+                  aria-describedby="emailHelp" 
+                  placeholder="Dolares a cordobas"
+                  name="dolares"
+                  [(ngModel)] = "dolares">
+                  <button class="btn-get-started ml-2" 
+                  style="border-radius: 5px !important;">Convertir</button>
+                </div>
+            </form>
+            
+              
+          </div>
+          <div class="container mt-5 mb-5" style="margin-bottom: 100% !important;" *ngIf="mostrarResultados">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="text-center">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="card-body clearfix">
+                        <div class="media align-items-stretch">
+                          <div class="align-self-center">
+                            <h1 class="mr-2">C$ {{resultado}}</h1>
+                          </div>
+                          <div class="media-body">
+                            <h4>{{ rateCordobas }}</h4>
+                            <span>Tasa (Dolares a Cordobas NIO)</span>
+                            <p>{{ fechaFormateada }}</p>
+                          </div>
+                          <div class="align-self-center">
+                            <i class="icon-wallet success font-large-2"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <img *ngIf="mostrarImagen" src="assets/images/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+  
+    </section><!-- /Hero Section -->
+  </main>
