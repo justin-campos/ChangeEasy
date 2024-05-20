@@ -25,12 +25,12 @@ A continuación se muestran algunas capturas de pantalla de la aplicación en fu
 
 1. **Formulario de Conversión**: El usuario introduce la cantidad de dólares que desea convertir y presiona el botón "Convertir".
 
-![Formulario de Conversión](ruta/a/tu/imagen1.png)
+![Formulario de Conversión](https://raw.githubusercontent.com/justin-campos/ChangeEasy/main/src/assets/images/cap2.jpeg)
 *Formulario de conversión de dólares a córdobas.*
 
 2. **Resultados de la Conversión**: Una vez que el formulario es enviado, se muestran los resultados de la conversión, incluyendo la cantidad en córdobas, la tasa de conversión y la fecha de la última actualización.
 
-![Resultados de la Conversión](ruta/a/tu/imagen2.png)
+![Resultados de la Conversión](https://raw.githubusercontent.com/justin-campos/ChangeEasy/main/src/assets/images/cap1.jpeg)
 *Resultados de la conversión mostrando la cantidad en córdobas, la tasa de conversión y la fecha de la última actualización.*
 
 
